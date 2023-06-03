@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/market"
+        android:icon="@drawable/baseline_equalizer_24"
+        android:title="@string/market" />
+    <item
+        android:id="@+id/features"
+        android:icon="@drawable/baseline_redeem_24"
+        android:title="@string/features" />
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/baseline_wallet_24"
+        android:title="@string/wallet" />
+</menu>

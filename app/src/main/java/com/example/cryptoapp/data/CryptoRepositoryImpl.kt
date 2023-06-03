@@ -57,7 +57,7 @@ class CryptoRepositoryImpl @Inject constructor(
     private fun mapToCryptoCoin(coinPriceInfo: CoinPriceInfo): CryptoCoin {
         return CryptoCoin(
             name = coinPriceInfo.fromSymbol,
-            fullName = coinPriceInfo.fromSymbol,
+            fullName = coinPriceInfo.toSymbol?: "USD",
             type = coinPriceInfo.type ?: "",
             imageUrl = coinPriceInfo.getFullImageUrl(),
             price = coinPriceInfo.price ?: "",

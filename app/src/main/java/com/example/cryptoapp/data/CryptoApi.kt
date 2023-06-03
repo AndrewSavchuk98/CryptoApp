@@ -2,8 +2,6 @@ package com.example.cryptoapp.data
 
 import com.example.cryptoapp.data.model.CoinInfoListOfData
 import com.example.cryptoapp.data.model.CoinPriceInfoRawData
-import com.example.cryptoapp.data.testmodel.CoinResult
-import com.example.cryptoapp.data.testmodel.Data
 import retrofit2.http.GET
 import retrofit2.http.Query
 
