@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.cryptoapp'
+    namespace 'com.example.cryptocoinapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.cryptoapp"
+        applicationId "com.example.cryptocoinapp"
         minSdk 24
         targetSdk 33
         versionCode 1

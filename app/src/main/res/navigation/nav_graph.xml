@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.cryptoapp.presentation.screens.HomeFragment"
+        android:name="com.example.cryptocoinapp.presentation.screens.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" >
         <action
@@ -17,6 +17,20 @@
     <fragment
         android:id="@+id/detailCoinFragment"
         tools:layout="@layout/fragment_detail_coin"
-        android:name="com.example.cryptoapp.presentation.screens.DetailCoinFragment"
+        android:name="com.example.cryptocoinapp.presentation.screens.DetailCoinFragment"
         android:label="DetailCoinFragment" />
+    <fragment
+        android:id="@+id/marketFragment"
+        tools:layout="@layout/fragment_market"
+        android:name="com.example.cryptocoinapp.presentation.screens.MarketFragment"
+        android:label="MarketFragment" />
+    <fragment
+        tools:layout="@layout/fragment_recycler"
+        android:id="@+id/recyclerFragment"
+        android:name="com.example.cryptocoinapp.presentation.screens.RecyclerFragment"
+        android:label="RecyclerFragment" >
+        <action
+            android:id="@+id/action_recyclerFragment_to_detailCoinFragment"
+            app:destination="@id/detailCoinFragment" />
+    </fragment>
 </navigation>
