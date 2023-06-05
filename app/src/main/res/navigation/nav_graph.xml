@@ -33,4 +33,18 @@
             android:id="@+id/action_recyclerFragment_to_detailCoinFragment"
             app:destination="@id/detailCoinFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/walletFragment"
+        tools:layout="@layout/fragment_wallet"
+        android:name="com.example.cryptocoinapp.presentation.screens.WalletFragment"
+        android:label="WalletFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.cryptocoinapp.presentation.screens.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.cryptocoinapp.presentation.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>

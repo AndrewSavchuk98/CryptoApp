@@ -9,6 +9,10 @@ import coil.load
 import com.example.cryptocoinapp.R
 import com.example.cryptocoinapp.databinding.FragmentDetailCoinBinding
 import com.example.cryptocoinapp.domain.model.CryptoCoin
+import com.github.mikephil.charting.components.XAxis
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.LineData
+import com.github.mikephil.charting.data.LineDataSet
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.random.Random
 
@@ -39,6 +43,18 @@ class DetailCoinFragment : Fragment(R.layout.fragment_detail_coin) {
                 volumeTextView.setTextColor(color)
                 priceTextView.text = "$ ${it.price}"
                 sumInWalletTextView.text = "0.00 ${it.name}"
+
+                val lineEntries = listOf(
+                    Entry(0f, 10f),
+                    Entry(1f, 20f),
+                    Entry(1.2f, 15f),
+                    Entry(2f, 30f)
+                ) // Replace with your own data
+
+                val dataSet = LineDataSet(lineEntries, "${it.name}")
+                val lineData = LineData(dataSet)
+                graphicView.data = lineData
+                graphicView.invalidate()
             }
 
         }

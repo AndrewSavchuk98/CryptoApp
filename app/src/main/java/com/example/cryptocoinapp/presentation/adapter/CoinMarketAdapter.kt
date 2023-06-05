@@ -5,8 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.cryptocoinapp.R
 import com.example.cryptocoinapp.databinding.MarketCoinItemBinding
 import com.example.cryptocoinapp.domain.model.CryptoCoin
+import java.text.DecimalFormat
+import kotlin.random.Random
 
 class CoinMarketAdapter(private val listener: CoinAdapter.OnCoinClickListener) :
     ListAdapter<CryptoCoin, CoinMarketAdapter.CoinMarketViewHolder>(CoinDiffUtil()) {
@@ -18,6 +21,17 @@ class CoinMarketAdapter(private val listener: CoinAdapter.OnCoinClickListener) :
                 iconImageView.load(coin.imageUrl)
                 nameTextView.text = coin.name
                 priceTextview.text = "$ ${coin.price}"
+                val decimalFormat = DecimalFormat("#.##")
+                val randomFloat = ((Random.nextFloat() * 8.0f) - 3.0f).toDouble()
+                val formattedFloat = decimalFormat.format(randomFloat)
+                val color = if (randomFloat < 0){
+                    itemView.context.getColor(R.color.red)
+                } else{
+                    itemView.context.getColor(R.color.green)
+                }
+                percentTextView.text = "$formattedFloat%"
+                percView.radius = 24f
+                percView.setCardBackgroundColor(color)
 
             }
         }

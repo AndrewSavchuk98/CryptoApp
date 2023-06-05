@@ -17,4 +17,32 @@
     <string name="spot">Spot</string>
     <string name="futures">Futures</string>
     <string name="zones">Zones</string>
+    <string name="profile">profile</string>
+    <string name="wallet_title">Wallet</string>
+    <string name="total_balance">Total balance</string>
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="swap">Swap</string>
+    <string name="avatar">Avatar</string>
+    <string name="krupich_dmitro">Krupich Dmitro</string>
+    <string name="krupich_gmail_com">krupich@gmail.com</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="my_balance">My balance</string>
+    <string name="analytics">Analytics</string>
+    <string name="sell_crypto">Sell Crypto</string>
+    <string name="send_crypto">Send Crypto</string>
+    <string name="log_out">Log out</string>
 </resources>
