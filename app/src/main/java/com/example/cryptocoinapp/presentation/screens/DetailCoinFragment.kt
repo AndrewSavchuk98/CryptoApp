@@ -48,7 +48,10 @@ class DetailCoinFragment : Fragment(R.layout.fragment_detail_coin) {
                     Entry(0f, 10f),
                     Entry(1f, 20f),
                     Entry(1.2f, 15f),
-                    Entry(2f, 30f)
+                    Entry(2f, 30f),
+                    Entry(2.1f, 22f),
+                    Entry(2.4f, 35f),
+                    Entry(2.9f, 27f),
                 ) // Replace with your own data
 
                 val dataSet = LineDataSet(lineEntries, "${it.name}")
